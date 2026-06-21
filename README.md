@@ -23,16 +23,14 @@ An AI-powered Android chatbot application built using Grok API integration.
 
 Developed as a collaborative academic project.
 
-## Note:## API Configuration
+## Note: API Configuration
 
 To run this project:
 
 1. Generate your own Grok API key.
 2. Replace:
 
-"Enter your API key here"
-
-with your valid API key.
+"Enter your API key here" with your valid API key.
 
 ## The API key has been intentionally removed from this repository for security purposes.
 
