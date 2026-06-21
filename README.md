@@ -1,24 +1,15 @@
 # NeuroChat AI
 
-An AI-powered Android chatbot application built using Grok API integration.
+## Authors
 
-## Features
+### 👨‍💻 Project Developers
+- **Rutansh Pandya**
+- **Ronit [Surname]**
 
-- AI-powered conversations
-- Real-time API responses
-- Modern Android UI
-- Fast and responsive interface
+## Project Information
+**Project Name:** NeuroChat AI  
+**Subject:** Mobile Application Development (MAD)  
+**Type:** AI-Powered Android Chatbot Application
 
-## Technologies
-
-- Java / Kotlin
-- Android Studio
-- Grok API
-- Gradle
-
-## Contributors
-
-- Ronit Timbadia
-- Rutansh Pandya
-
-Developed as a collaborative academic project.
+## Developed By
+This project was collaboratively designed, developed, and tested by **Rutansh Pandya** and **Ronit [Surname]** as part of the Mobile Application Development (MAD) coursework.

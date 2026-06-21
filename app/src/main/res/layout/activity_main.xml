@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0F172A"
+    android:fitsSystemWindows="true">
+
+    <!-- MAIN -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- TOP BAR -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#1E293B"
+            android:gravity="center_vertical"
+            android:padding="12dp">
+
+            <ImageView
+                android:id="@+id/menuBtn"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@android:drawable/ic_menu_sort_by_size"
+                android:tint="#FFFFFF"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NeuroChat AI"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:layout_marginStart="15dp"/>
+        </LinearLayout>
+
+        <!-- CHAT AREA -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <!-- CHAT LIST -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"/>
+
+            <!-- EMPTY MESSAGE -->
+            <TextView
+                android:id="@+id/emptyMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hi 👋\nWelcome to NeuroChat\nHow can I help you?"
+                android:textColor="#94A3B8"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:layout_gravity="center"/>
+        </FrameLayout>
+
+        <!-- INPUT -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#1E293B"
+            android:padding="8dp"
+            android:gravity="center_vertical">
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Ask anything..."
+                android:textColor="#FFFFFF"
+                android:textColorHint="#94A3B8"
+                android:background="@null"/>
+
+            <ImageView
+                android:id="@+id/sendBtn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@android:drawable/ic_menu_send"
+                android:tint="#2563EB"
+                android:padding="6dp"
+                android:clickable="true"
+                android:focusable="true"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- SIDEBAR (UNCHANGED + REQUIRED) -->
+    <LinearLayout
+        android:id="@+id/sidebar"
+        android:layout_width="270dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_sidebar"
+        android:orientation="vertical"
+        android:padding="12dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chats"
+            android:textColor="#94A3B8"
+            android:textSize="14sp"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:id="@+id/newChatBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="+ New Chat"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/bg_newchat"
+            android:layout_marginBottom="12dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/historyRecycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+</FrameLayout>
