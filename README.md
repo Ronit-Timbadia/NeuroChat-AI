@@ -1,2 +1,24 @@
-# NeuroChat-AI
-AI-powered Android chatbot application built with Java and Grok API, featuring real-time conversational responses through REST API integration and a modern mobile UI.
+# NeuroChat AI
+
+An AI-powered Android chatbot application built using Grok API integration.
+
+## Features
+
+- AI-powered conversations
+- Real-time API responses
+- Modern Android UI
+- Fast and responsive interface
+
+## Technologies
+
+- Java / Kotlin
+- Android Studio
+- Grok API
+- Gradle
+
+## Contributors
+
+- Ronit Timbadia
+- Rutansh Pandya
+
+Developed as a collaborative academic project.
